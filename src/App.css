@@ -1,38 +1,139 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Source+Sans+Pro:ital,wght@0,400;1,200&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #23252C;
+    display: flex;
+    justify-content: center;
+    font-family: 'Inter', sans-serif;
+}
+.container{
+    background-color: #1A1B21;
+    width: 80vw;
+    color: white;
+    border-radius: 10px;
+    margin: 30px 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+img{
+    height: 280px;
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+    background-image: center;
+    background-size: cover;
+}
+.Info h3{
+    text-align: center;
+    margin: 23px 15px 9px 15px;
+    font-size: 30px;
+}
+.Info p{
+    text-align: center;
+}
+.Info p.profession{
+    color: #F3BF99;
+    margin: 2px 0 9px 0;
+}
+.website{
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 4px 0;
+}
+.SocialMedia{
+    margin: 15px 0;
+    display: flex;
+    justify-content: center;
+}
+.SocialMedia a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: 110px;
+    border-radius: 6px;
+}
+.SocialMedia span{
+    margin: 0 0 0 8px;
+}
+.SocialMedia .Email{
+    background-color: #D1D5DB;
+    color: #374151;
+    margin: 0 17px 0 0;
+}
+.SocialMedia .LinkedlIn{
+    background-color: #5093E2;
+    color: white;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/* About */
+.About,.Interest{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.About{
+    margin: 25px auto 0px auto;
+}
+.About h4{
+    margin: 6px 0;
+    font-size: 19px;
+}
+.About p{
+    line-height: 1.1em;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+/* Interest */
+.Interest{
+    margin: 25px auto;
+}
+.Interest h4{
+    margin: 6px 0;
+    line-height: 1.3em;
+    font-size: 19px;
+}
+.Interest p{
+    line-height: 1.1em;
+    font-size: 14px;
+    font-weight: 400;
+}
+/* Footer */
+.Footer{
+    background-color: #161619;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 0 10px 10px;
+}
+.icons svg{
+    height: 25px;
+    width: 25px;
+    margin: 0 15px;
+}
+.icons a {
+    text-decoration: none;
+    color: white;
+}
+/* Tablet and laptop */
+@media screen and (min-width: 500px) {
+    .container {
+        max-width: 370px!important;
+    }
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* small screen */
+@media screen and (max-width: 360px) {
+    .container {
+        width: 90vw;
+    }
   }
-  to {
-    transform: rotate(360deg);
-  }
-}
